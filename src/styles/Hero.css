@@ -85,13 +85,14 @@
 }
 
 @media (max-width: 430px) {
-  html {
+  body  {
     scroll-behavior: smooth;
+    height: 100vh;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+
   }
 
-  body, html {
-    overflow-x: hidden;
-  }
 
   .collection-grid {
     grid-template-columns: 1fr;
