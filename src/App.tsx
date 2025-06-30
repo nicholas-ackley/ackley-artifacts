@@ -5,9 +5,10 @@ import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './pages/About';
-import Shop from './pages/Shop';
+import Shop from './pages/Plates';
 import Footer from './components/Footer';
-
+import Decoration from './pages/Decoration';
+import FrogHouse from './pages/FrogHouse';
 const App: React.FC = () => {
   useEffect(() => {
     AOS.init({
@@ -23,6 +24,9 @@ const App: React.FC = () => {
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/decoration" element={<Decoration />} />
+        <Route path="/froghouse" element={<FrogHouse />} />
+
       </Routes>
       <Footer />
     </Router>
