@@ -1,12 +1,14 @@
-body,html, #root {
+body, html, #root {
   scroll-behavior: smooth;
-  min-height: 100vh; /* change from height to min-height to allow scrolling */
-  overflow-x: hidden; /* prevent horizontal scroll */
-  overflow-y: auto;   /* ensure vertical scrolling works */
-  width: 100%;        /* ensure no width overflow */
-  margin: 0;          /* remove default margin that can cause overflow */
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
   padding: 0;
 }
+
 
 .hero {
   text-align: center;
@@ -30,8 +32,12 @@ body,html, #root {
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin: 80px auto;
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
+
 
 .collection-item {
   position: relative;

@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
   return (
     <div className="hero">
       <img src={ackley} alt="Ackley Artifacts" className="hero-image" data-aos="fade-down" data-aos-duration="1000" />
-      <h2 className="hero-subtitle" data-aos="fade-up" data-aos-delay="200">SHOP THE asdasdadCOLLECTION</h2>
+      <h2 className="hero-subtitle" data-aos="fade-up" data-aos-delay="200">SHOP THE COLLECTION</h2>
       <div className="collection-grid">
         {collectionImages.map((item, index) => (
           <div key={index} className="collection-item" data-aos="zoom-in" data-aos-delay={index * 100}>
