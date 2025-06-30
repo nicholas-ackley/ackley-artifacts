@@ -86,9 +86,7 @@
 
 
 @media (max-width: 430px) {
-  body {
-  overflow-x: hidden; /* prevents accidental horizontal scrolling */
-}
+
 
 html {
   overflow-x: hidden;
