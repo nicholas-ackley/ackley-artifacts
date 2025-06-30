@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
                   All Products
                 </NavLink>
                 <NavLink
-                  to="/shop/plates"
+                  to="/shop"
                   className={({ isActive }) =>
                     isActive ? 'dropdown-link active-link' : 'dropdown-link'
                   }
@@ -46,22 +46,22 @@ const Navbar: React.FC = () => {
                   Plates & Platters
                 </NavLink>
                 <NavLink
-                  to="/shop/novelty"
+                  to="/Decoration"
                   className={({ isActive }) =>
                     isActive ? 'dropdown-link active-link' : 'dropdown-link'
                   }
                   onClick={() => setIsDropdownOpen(false)}
                 >
-                  Novelty
+                  Decoration
                 </NavLink>
                 <NavLink
-                  to="/shop/vases"
+                  to="/FrogHouse"
                   className={({ isActive }) =>
                     isActive ? 'dropdown-link active-link' : 'dropdown-link'
                   }
                   onClick={() => setIsDropdownOpen(false)}
                 >
-                  Vases & Lamp Bases
+                  Frog Houses
                 </NavLink>
               </motion.div>
             )}
