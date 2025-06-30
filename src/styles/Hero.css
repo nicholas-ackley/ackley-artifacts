@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
   width: 100% !important;
   max-width: 100% !important;
   overflow-x: hidden !important;
@@ -6,7 +6,7 @@ html, body {
     min-height: 100%;
   margin: 0 !important;
     overflow-x: clip;
-}
+} */
 * {
   outline: 1px solid red;
 }
