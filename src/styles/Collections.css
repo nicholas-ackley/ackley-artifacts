@@ -1,0 +1,20 @@
+.about-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "Georgia", serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.about-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
