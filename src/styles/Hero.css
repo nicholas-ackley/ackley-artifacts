@@ -1,9 +1,7 @@
-
 .hero {
   text-align: center;
   margin: 40px 0;
   min-height: 100vh;
-
 }
 
 .hero-image {
@@ -11,24 +9,26 @@
   width: 90%;
 }
 
-
 .hero-subtitle {
   font-size: 18px;
   letter-spacing: 2px;
   font-family: "Georgia", serif;
 }
+
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin: 80px auto;
-  width:1100px;
+  width: 1100px;
 }
 
 .collection-item {
-  width: 100%;
-  aspect-ratio: 1 / 1; /* Ensures square images if supported */
-  /* overflow: hidden; */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .collection-image {
@@ -36,27 +36,29 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .collection-info {
-  margin-top: 10px;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  display: block;
   text-align: center;
+  margin-top: 10px;
   font-family: "Georgia", serif;
 }
 
 .collection-name {
   font-size: 14px;
   margin: 0;
+  color: black;
 }
 
 .collection-price {
   font-size: 12px;
   margin: 0;
   color: gray;
-}
-.collection-item {
-  position: relative;
-  overflow: hidden;
 }
 
 .collection-item::after {
@@ -71,14 +73,11 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
+  z-index: 5; /* ensure it is under .collection-info */
 }
 
 .collection-item:hover::after {
   opacity: 1;
-}
-
-.collection-image {
-  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .collection-item:hover .collection-image {
@@ -86,23 +85,17 @@
   filter: brightness(70%);
 }
 
-
 @media (max-width: 430px) {
-  body,html {
-  /* overflow: hidden; */
-  /* overscroll-behavior: none; */
-  /* overflow-y: auto; */
-  width: 98%;
   html {
-  scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;
+  }
 
-}
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
 
-
-
-  .collection-grid,
-  .shop-grid {
+  .collection-grid {
     grid-template-columns: 1fr;
     gap: 30px;
     width: 100%;
@@ -111,45 +104,20 @@
     padding: 0 10px;
   }
 
-  .collection-item,
-  .shop-item {
+  .collection-item {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
-  .collection-image,
-  .shop-image {
+  .collection-image {
     width: 100%;
     height: auto;
-    object-fit: cover;
   }
 
-  .collection-info,
-  .shop-info {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .collection-name,
-  .shop-name {
-    font-size: 14px;
-    margin: 0;
-  }
-
-  .collection-price,
-  .shop-price {
-    font-size: 12px;
-    color: gray;
-    margin: 0;
-  }
   .collection-info {
-    display: block;
+    display: block !important;
+    opacity: 1 !important;
     width: 100%;
     text-align: center;
     margin-top: 10px;
@@ -165,5 +133,5 @@
     font-size: 12px;
     color: gray;
     margin: 0;
-}
+  }
 }
