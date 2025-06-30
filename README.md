@@ -1,4 +1,4 @@
-<h1 align="center">🪴 [Your Mom's Name] Pottery Art Website</h1>
+<h1 align="center">🪴 Ackley Artifacts Pottery Art Website</h1>
 
 <p align="center">
   A beautiful, responsive website showcasing handmade pottery, featuring a gallery, biography, and shop links.
