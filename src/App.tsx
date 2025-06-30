@@ -17,7 +17,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename='/ackley-artifacts'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Hero />} />
