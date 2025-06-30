@@ -1,69 +1,43 @@
-# React + TypeScript + Vite
+<h1 align="center">🪴 [Your Mom's Name] Pottery Art Website</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  A beautiful, responsive website showcasing handmade pottery, featuring a gallery, biography, and shop links.
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Overview
 
-## Expanding the ESLint configuration
+This website was created to display and celebrate the pottery art of **[Your Mom's Name]**, featuring:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🖼️ High-quality gallery of her art pieces
+- 📝 Her biography and artist statement
+- 🛒 Purchase links redirecting to her Etsy store
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Framework/Libraries:** [React / Next.js / plain HTML depending on your setup]
+- **Styling:** TailwindCSS / custom CSS
+- **Hosting:** GitHub Pages / Netlify / Vercel
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 💻 Features
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🎨 Minimalistic and aesthetic gallery layout
+- 📖 Dedicated page for her biography
+- 🛒 Shop buttons linking to external Etsy listings
+- 📱 Fully responsive on all devices
+
+---
+
+## 🚀 Installation
+
+Clone the project:
+
+```bash
+git clone https://github.com/yourusername/mom-pottery-website
+cd mom-pottery-website
