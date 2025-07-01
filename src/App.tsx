@@ -16,6 +16,16 @@ const App: React.FC = () => {
       once: true,
     });
   }, []);
+  AOS.init({
+  disable: 'mobile', 
+
+
+  duration: 600, // default is 400, adjust if needed
+  once: true, // animate only once, not every scroll
+  throttleDelay: 99, // default is 99ms
+  debounceDelay: 50, // default is 50ms
+});
+
 
   return (
     <Router basename='/ackley-artifacts'>
