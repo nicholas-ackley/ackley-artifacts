@@ -24,6 +24,9 @@ img {
   height: auto;
   display: block; /* Removes inline spacing issues */
 }
+[data-aos] {
+  will-change: transform, opacity;
+}
 
 .hero {
   text-align: center;

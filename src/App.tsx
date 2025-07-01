@@ -17,13 +17,11 @@ const App: React.FC = () => {
     });
   }, []);
   AOS.init({
-  disable: 'mobile', 
-
-
-  duration: 600, // default is 400, adjust if needed
-  once: true, // animate only once, not every scroll
-  throttleDelay: 99, // default is 99ms
-  debounceDelay: 50, // default is 50ms
+  duration: 600, // adjust as needed
+  once: true, // prevents re-triggering animations repeatedly
+  mirror: false, // disables animation on scroll up (if not needed)
+  throttleDelay: 10, // reduce delay to make it more responsive
+  debounceDelay: 1, // reduce debounce for faster response
 });
 
 
