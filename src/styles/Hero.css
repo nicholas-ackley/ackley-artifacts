@@ -17,7 +17,11 @@
 html, body {
   overflow-x: hidden;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes inline spacing issues */
+}
 
 .hero {
   text-align: center;
@@ -72,6 +76,7 @@ html, body {
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease, filter 0.3s ease;
+    -webkit-overflow-scrolling: touch;
 }
 
 .collection-info {
