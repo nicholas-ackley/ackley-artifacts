@@ -7,7 +7,9 @@
   margin: 0 !important;
     overflow-x: clip;
 } */
-
+html, body {
+  overflow-x: clip;
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
