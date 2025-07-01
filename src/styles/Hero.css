@@ -7,9 +7,7 @@
   margin: 0 !important;
     overflow-x: clip;
 } */
-html, body {
-  overflow-x: clip;
-}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -19,14 +17,7 @@ html, body {
 html, body {
   overflow-x: hidden;
 }
-img {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Removes inline spacing issues */
-}
-[data-aos] {
-  will-change: transform, opacity;
-}
+
 
 .hero {
   text-align: center;
@@ -81,7 +72,6 @@ img {
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease, filter 0.3s ease;
-    -webkit-overflow-scrolling: touch;
 }
 
 .collection-info {

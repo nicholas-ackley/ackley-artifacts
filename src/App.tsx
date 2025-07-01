@@ -16,14 +16,9 @@ const App: React.FC = () => {
       once: true,
     });
   }, []);
-  AOS.init({
-  duration: 600, // adjust as needed
-  once: true, // prevents re-triggering animations repeatedly
-  mirror: false, // disables animation on scroll up (if not needed)
-  throttleDelay: 10, // reduce delay to make it more responsive
-  debounceDelay: 1, // reduce debounce for faster response
-});
-
+  useEffect(() => {
+    document.title = "Ackley Artifacts";
+  }, []);
 
   return (
     <Router basename='/ackley-artifacts'>
