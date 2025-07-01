@@ -7,25 +7,38 @@
   margin: 0 !important;
     overflow-x: clip;
 } */
-* {
-  outline: 1px solid red;
-}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
+/* html,body{
+  overflow-x: hidden;
+} */
+html, body {
+  overflow-x: hidden;
+}
 
 
 .hero {
   text-align: center;
   margin: 40px 0;
   min-height: 100vh;
+  width: 100%; /* add this to constrain */
+  box-sizing: border-box; /* ensures padding doesn't exceed width */
+  
+  overflow-x: hidden; /* prevents hero-specific x overflow */
 }
 
 .hero-image {
+  display: block;
+  margin: 0 auto;
   max-width: 300px;
   width: 90%;
+  height: auto;
+  object-fit: contain;
 }
+
+
 
 .hero-subtitle {
   font-size: 18px;
